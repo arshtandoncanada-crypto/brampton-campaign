@@ -22,22 +22,22 @@
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                        heading: ['Playfair Display', 'serif'], // Added a serif for a more professional, authoritative look
+                        heading: ['Playfair Display', 'serif'],
                     },
                     colors: {
                         navy: {
                             800: '#1a2942',
-                            900: '#0f172a', // Main deep navy
-                            950: '#020617', // Darker navy for contrast
+                            900: '#0f172a',
+                            950: '#020617',
                         },
                         gold: {
                             400: '#fbbf24',
-                            500: '#f59e0b', // Rich gold
+                            500: '#f59e0b',
                             600: '#d97706',
                         },
                         crimson: {
                             500: '#ef4444',
-                            600: '#dc2626', // Professional red accent
+                            600: '#dc2626',
                             700: '#b91c1c',
                         }
                     },
@@ -64,15 +64,14 @@
         body {
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
-            background-color: #0f172a; /* Navy background */
-            color: #cbd5e1; /* Slate 300 for readable body text */
+            background-color: #0f172a;
+            color: #cbd5e1;
         }
         h1, h2, h3, h4, h5, h6, .font-heading {
             font-family: 'Playfair Display', serif;
             color: #ffffff;
         }
         
-        /* Glassmorphism for Dark Navbar */
         .glass-nav {
             background: rgba(15, 23, 42, 0.85);
             backdrop-filter: blur(12px);
@@ -80,7 +79,6 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Gold Gradient Text */
         .text-gold-gradient {
             background: linear-gradient(to right, #fbbf24, #f59e0b);
             -webkit-background-clip: text;
@@ -88,7 +86,6 @@
             background-clip: text;
         }
 
-        /* Custom Button Styles */
         .btn-gold {
             background-color: #f59e0b;
             color: #0f172a;
@@ -110,7 +107,6 @@
             color: #0f172a;
         }
 
-        /* Reveal animations on scroll */
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -239,17 +235,23 @@
                         <div class="w-8 h-1 bg-crimson-600"></div>
                         <h2 class="text-gold-400 font-bold tracking-widest uppercase text-sm">Meet The Candidate</h2>
                     </div>
-                    <h3 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Deep Roots. <span class="text-gold-400">Real Results.</span></h3>
+                    <h3 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">About Me</h3>
                     
                     <div class="prose prose-lg text-gray-300 mb-8 space-y-4">
                         <p>
-                            Sameer Tandon is a dedicated community leader, professional, and proud resident of Brampton. For over a decade, Sameer has been at the forefront of community advocacy, working tirelessly to ensure our neighborhoods are safe, inclusive, and prosperous.
+                            I believe public service is about listening, leading with integrity, and delivering real results for the people we serve.
                         </p>
                         <p>
-                            As your Regional Councillor for Wards 2 & 6, Sameer brings a wealth of experience from both the private sector and grassroots organizing. He understands that Brampton's rapid growth requires smart, sustainable planning that puts residents first—not developers.
+                            For many years, I have built my career around helping individuals, solving complex problems, and making responsible decisions. My experience in finance, operations, and client service has taught me the importance of accountability, transparency, and putting people first.
                         </p>
-                        <blockquote class="border-l-4 border-gold-500 pl-4 italic text-white my-6 bg-navy-800/50 py-3 pr-3">
-                            "I am running because I believe in the unmatched potential of Brampton. We need leadership that listens, acts transparently, and fights for our fair share of regional resources to improve our daily lives."
+                        <p>
+                            As your Regional Councillor, my commitment is simple: to be a strong voice for our community at Peel Region and ensure every decision reflects the needs of residents, families, seniors, youth, and local businesses.
+                        </p>
+                        <p>
+                            I believe leadership is not about politics — it is about service. My promise is to work hard, remain accessible, and represent every resident with honesty, respect, and dedication.
+                        </p>
+                        <blockquote class="border-l-4 border-gold-500 pl-4 italic text-white my-6 bg-navy-800/50 py-3 pr-3 font-medium">
+                            Together, we can build a stronger, safer, and more affordable community for today and for future generations.
                         </blockquote>
                     </div>
 
@@ -278,145 +280,164 @@
                     Our Platform
                     <span class="w-8 h-1 bg-crimson-600 hidden sm:block"></span>
                 </h2>
-                <h3 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">A Clear Vision for Wards 2 & 6</h3>
-                <p class="text-lg text-gray-400">My priorities are shaped by the conversations I've had with thousands of residents at the doors. Here is what we will tackle together.</p>
+                <h3 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">My Priorities for Peel Region</h3>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Priority Card 1 -->
-                <div class="bg-navy-900 border border-navy-700 rounded-sm p-8 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Priority 1 -->
+                <div class="bg-navy-900 border border-navy-700 rounded-sm p-6 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-1 bg-gold-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-                    <div class="w-14 h-14 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:border-gold-500 transition-colors duration-300">
-                        <i class="fa-solid fa-road text-xl text-gold-400"></i>
+                    <div class="w-12 h-12 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-4 group-hover:border-gold-500 transition-colors duration-300">
+                        <i class="fa-solid fa-file-invoice-dollar text-lg text-gold-400"></i>
                     </div>
-                    <h4 class="text-2xl font-heading font-bold text-white mb-4">Smart Infrastructure</h4>
+                    <h4 class="text-xl font-heading font-bold text-white mb-2">Affordable Taxes</h4>
+                    <p class="text-gold-400 text-sm font-semibold mb-3">Protecting your hard-earned money.</p>
                     <p class="text-gray-400 leading-relaxed text-sm">
-                        Tackling gridlock by expanding our road networks efficiently, fixing potholes faster, and advocating for better public transit connections across Peel Region to get you home sooner.
+                        I will champion responsible budgeting, eliminate wasteful spending, and ensure every tax dollar delivers real value for residents while keeping Regional property taxes affordable.
                     </p>
                 </div>
 
-                <!-- Priority Card 2 -->
-                <div class="bg-navy-900 border border-navy-700 rounded-sm p-8 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 100ms;">
+                <!-- Priority 2 -->
+                <div class="bg-navy-900 border border-navy-700 rounded-sm p-6 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 50ms;">
                     <div class="absolute top-0 left-0 w-full h-1 bg-gold-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-                    <div class="w-14 h-14 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:border-gold-500 transition-colors duration-300">
-                        <i class="fa-solid fa-shield-halved text-xl text-gold-400"></i>
+                    <div class="w-12 h-12 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-4 group-hover:border-gold-500 transition-colors duration-300">
+                        <i class="fa-solid fa-house-chimney text-lg text-gold-400"></i>
                     </div>
-                    <h4 class="text-2xl font-heading font-bold text-white mb-4">Community Safety</h4>
+                    <h4 class="text-xl font-heading font-bold text-white mb-2">Affordable Housing</h4>
+                    <p class="text-gold-400 text-sm font-semibold mb-3">Helping families find a place to call home.</p>
                     <p class="text-gray-400 leading-relaxed text-sm">
-                        Working closely with Peel Regional Police to increase neighborhood patrols, combat auto thefts, and invest in youth programs to prevent crime before it starts.
+                        I will support practical solutions to increase affordable housing, reduce homelessness, and work with all levels of government to build complete, livable communities.
                     </p>
                 </div>
 
-                <!-- Priority Card 3 -->
-                <div class="bg-navy-900 border border-navy-700 rounded-sm p-8 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 200ms;">
+                <!-- Priority 3 -->
+                <div class="bg-navy-900 border border-navy-700 rounded-sm p-6 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 100ms;">
                     <div class="absolute top-0 left-0 w-full h-1 bg-gold-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-                    <div class="w-14 h-14 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:border-gold-500 transition-colors duration-300">
-                        <i class="fa-solid fa-house-chimney text-xl text-gold-400"></i>
+                    <div class="w-12 h-12 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-4 group-hover:border-gold-500 transition-colors duration-300">
+                        <i class="fa-solid fa-shield-halved text-lg text-gold-400"></i>
                     </div>
-                    <h4 class="text-2xl font-heading font-bold text-white mb-4">Affordable Living</h4>
+                    <h4 class="text-xl font-heading font-bold text-white mb-2">Safe Communities</h4>
+                    <p class="text-gold-400 text-sm font-semibold mb-3">Safety is not a luxury — it is a right.</p>
                     <p class="text-gray-400 leading-relaxed text-sm">
-                        Fighting to keep property taxes low by eliminating municipal waste. Supporting responsible housing development so our children can afford to live in the city they grew up in.
+                        I will support strong police services, reliable paramedic response, emergency preparedness, and community safety initiatives that help keep every neighbourhood safe.
                     </p>
                 </div>
 
-                <!-- Priority Card 4 -->
-                <div class="bg-navy-900 border border-navy-700 rounded-sm p-8 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 300ms;">
+                <!-- Priority 4 -->
+                <div class="bg-navy-900 border border-navy-700 rounded-sm p-6 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 150ms;">
                     <div class="absolute top-0 left-0 w-full h-1 bg-gold-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-                    <div class="w-14 h-14 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:border-gold-500 transition-colors duration-300">
-                        <i class="fa-solid fa-briefcase-medical text-xl text-gold-400"></i>
+                    <div class="w-12 h-12 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-4 group-hover:border-gold-500 transition-colors duration-300">
+                        <i class="fa-solid fa-user-nurse text-lg text-gold-400"></i>
                     </div>
-                    <h4 class="text-2xl font-heading font-bold text-white mb-4">Healthcare Access</h4>
+                    <h4 class="text-xl font-heading font-bold text-white mb-2">Better Health & Seniors</h4>
+                    <p class="text-gold-400 text-sm font-semibold mb-3">Healthier communities. Better care.</p>
                     <p class="text-gray-400 leading-relaxed text-sm">
-                        Brampton's healthcare system is stretched. I will aggressively lobby the province for our fair share of hospital funding and support the expansion of local urgent care centers.
+                        I will strengthen Peel Public Health programs, improve access to mental health services, support paramedics, and ensure seniors receive the dignity, care, and respect they deserve.
                     </p>
                 </div>
 
-                <!-- Priority Card 5 -->
-                <div class="bg-navy-900 border border-navy-700 rounded-sm p-8 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 400ms;">
+                <!-- Priority 5 -->
+                <div class="bg-navy-900 border border-navy-700 rounded-sm p-6 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 200ms;">
                     <div class="absolute top-0 left-0 w-full h-1 bg-gold-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-                    <div class="w-14 h-14 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:border-gold-500 transition-colors duration-300">
-                        <i class="fa-solid fa-leaf text-xl text-gold-400"></i>
+                    <div class="w-12 h-12 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-4 group-hover:border-gold-500 transition-colors duration-300">
+                        <i class="fa-solid fa-chart-line text-lg text-gold-400"></i>
                     </div>
-                    <h4 class="text-2xl font-heading font-bold text-white mb-4">Parks & Environment</h4>
+                    <h4 class="text-xl font-heading font-bold text-white mb-2">Strong Local Economy</h4>
+                    <p class="text-gold-400 text-sm font-semibold mb-3">Supporting businesses. Creating opportunity.</p>
                     <p class="text-gray-400 leading-relaxed text-sm">
-                        Protecting our green spaces, upgrading local parks in Wards 2 & 6 with modern amenities, and implementing sustainable waste management practices.
+                        I will advocate for reducing unnecessary red tape, supporting entrepreneurs, attracting investment, and creating an environment where businesses can grow and create good-paying jobs.
                     </p>
                 </div>
 
-                <!-- Priority Card 6 (Call to Action) -->
-                <div class="bg-gold-500 rounded-sm p-8 shadow-lg hover:bg-gold-400 transition-all duration-300 transform hover:-translate-y-1 reveal flex flex-col justify-center items-center text-center border-b-4 border-crimson-600" style="transition-delay: 500ms;">
-                    <h4 class="text-2xl font-heading font-bold text-navy-900 mb-4">Have an Idea?</h4>
-                    <p class="text-navy-800 mb-6 font-medium">Our platform is driven by residents like you. Share your concerns with Sameer.</p>
-                    <a href="#contact" class="bg-navy-900 text-white px-6 py-3 rounded-sm font-bold hover:bg-navy-800 transition-colors">Contact Us</a>
+                <!-- Priority 6 -->
+                <div class="bg-navy-900 border border-navy-700 rounded-sm p-6 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 250ms;">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gold-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    <div class="w-12 h-12 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-4 group-hover:border-gold-500 transition-colors duration-300">
+                        <i class="fa-solid fa-graduation-cap text-lg text-gold-400"></i>
+                    </div>
+                    <h4 class="text-xl font-heading font-bold text-white mb-2">Opportunities for Youth</h4>
+                    <p class="text-gold-400 text-sm font-semibold mb-3">Investing in the next generation.</p>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        I will support youth employment, skills development, recreation, leadership opportunities, and partnerships that help young people succeed and reach their full potential.
+                    </p>
+                </div>
+
+                <!-- Priority 7 -->
+                <div class="bg-navy-900 border border-navy-700 rounded-sm p-6 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 300ms;">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gold-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    <div class="w-12 h-12 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-4 group-hover:border-gold-500 transition-colors duration-300">
+                        <i class="fa-solid fa-bus text-lg text-gold-400"></i>
+                    </div>
+                    <h4 class="text-xl font-heading font-bold text-white mb-2">Better Transportation</h4>
+                    <p class="text-gold-400 text-sm font-semibold mb-3">Moving people safely and efficiently.</p>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        I will advocate for better regional transit, safer roads, improved traffic flow, and transportation planning that supports families, workers, seniors, students, and local businesses.
+                    </p>
+                </div>
+
+                <!-- Priority 8 -->
+                <div class="bg-navy-900 border border-navy-700 rounded-sm p-6 hover:bg-navy-800 transition-all duration-300 transform hover:-translate-y-1 reveal group relative overflow-hidden" style="transition-delay: 350ms;">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gold-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    <div class="w-12 h-12 rounded-full bg-navy-950 border border-gold-500/30 flex items-center justify-center mb-4 group-hover:border-gold-500 transition-colors duration-300">
+                        <i class="fa-solid fa-scale-balanced text-lg text-gold-400"></i>
+                    </div>
+                    <h4 class="text-xl font-heading font-bold text-white mb-2">Transparent Government</h4>
+                    <p class="text-gold-400 text-sm font-semibold mb-3">Open government. Accountable leadership.</p>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        I will promote transparent decision-making, responsible financial management, open communication, and regular public engagement so residents always know how decisions are being made.
+                    </p>
                 </div>
             </div>
+
+            <!-- Commitment Banner -->
+            <div class="mt-12 bg-gold-500 rounded-sm p-8 md:p-12 shadow-2xl reveal text-center border-b-4 border-crimson-600">
+                <h4 class="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-6">My Commitment to You</h4>
+                <p class="text-navy-900 font-bold text-lg md:text-xl mb-4 leading-relaxed max-w-4xl mx-auto">
+                    Affordable taxes. Safe communities. Affordable housing. Better health. Strong businesses. Opportunities for youth. Better transportation. Transparent government.
+                </p>
+                <div class="w-16 h-1 bg-crimson-600 mx-auto mb-4"></div>
+                <p class="text-navy-800 font-semibold text-lg max-w-3xl mx-auto">
+                    Together, we will build a stronger, safer, healthier, and more affordable Peel Region.
+                </p>
+            </div>
+
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-navy-900 border-t border-navy-800 relative">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="reveal">
-                <div class="text-center mb-12">
+                <div class="text-center mb-16">
                     <h2 class="text-gold-400 font-bold tracking-widest uppercase text-sm mb-2 flex items-center justify-center gap-2">
                         <span class="w-8 h-1 bg-crimson-600"></span> Get in Touch <span class="w-8 h-1 bg-crimson-600"></span>
                     </h2>
-                    <h3 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Let's Talk About Brampton's Future.</h3>
-                    <p class="text-gray-400 text-lg">
-                        Have a question about the platform? Need assistance with a local issue? Reach out to the campaign team. We're here to listen.
+                    <h3 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Reach Out to the Campaign</h3>
+                    <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                        Have a question about the platform or need assistance with a local issue? We're always here to listen.
                     </p>
                 </div>
 
-                <div class="bg-navy-800 border border-navy-700 p-8 md:p-12 rounded-lg shadow-2xl space-y-8 max-w-xl mx-auto">
-                    <div class="flex items-center gap-6">
-                        <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center border border-navy-700 bg-navy-950 rounded-sm">
-                            <i class="fa-solid fa-envelope text-gold-400 text-xl"></i>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Email Card -->
+                    <div class="bg-navy-800 border border-navy-700 p-10 rounded-lg shadow-xl flex flex-col items-center text-center transform transition-transform hover:-translate-y-1">
+                        <div class="w-16 h-16 flex items-center justify-center bg-navy-950 rounded-full mb-6 border border-gold-500/30">
+                            <i class="fa-solid fa-envelope text-gold-400 text-2xl"></i>
                         </div>
-                        <div>
-                            <p class="text-sm text-gray-400 uppercase tracking-wider font-semibold">Email Us</p>
-                            <p class="text-lg font-medium text-white break-all">ourwardourfuture@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="w-full h-px bg-navy-700/50"></div>
-
-                    <div class="flex items-center gap-6">
-                        <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center border border-navy-700 bg-navy-950 rounded-sm">
-                            <i class="fa-solid fa-phone text-gold-400 text-xl"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm text-gray-400 uppercase tracking-wider font-semibold">Campaign Number</p>
-                            <p class="text-lg font-medium text-white">437-6020715</p>
-                        </div>
+                        <p class="text-sm text-gray-400 uppercase tracking-wider font-semibold mb-2">Email Us</p>
+                        <a href="mailto:ourwardourfuture@gmail.com" class="text-xl font-medium text-white hover:text-gold-400 transition-colors break-all">
+                            ourwardourfuture@gmail.com
+                        </a>
                     </div>
 
-                    <div class="w-full h-px bg-navy-700/50"></div>
-
-                    <div class="flex items-center gap-6">
-                        <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center border border-navy-700 bg-navy-950 rounded-sm">
-                            <i class="fa-solid fa-location-dot text-gold-400 text-xl"></i>
+                    <!-- Phone Card -->
+                    <div class="bg-navy-800 border border-navy-700 p-10 rounded-lg shadow-xl flex flex-col items-center text-center transform transition-transform hover:-translate-y-1">
+                        <div class="w-16 h-16 flex items-center justify-center bg-navy-950 rounded-full mb-6 border border-gold-500/30">
+                            <i class="fa-solid fa-phone text-gold-400 text-2xl"></i>
                         </div>
-                        <div>
-                            <p class="text-sm text-gray-400 uppercase tracking-wider font-semibold">Campaign Office</p>
-                            <p class="text-lg font-medium text-white">123 Main St, Brampton, ON</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-16 text-center">
-                    <p class="text-sm text-gray-400 mb-6 uppercase tracking-widest font-bold">Follow the Campaign</p>
-                    <div class="flex gap-4 justify-center">
-                        <a href="#" class="w-12 h-12 border border-navy-700 bg-navy-800 hover:bg-gold-500 hover:text-navy-900 flex items-center justify-center transition-colors duration-300 rounded-sm text-white text-lg">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-12 h-12 border border-navy-700 bg-navy-800 hover:bg-gold-500 hover:text-navy-900 flex items-center justify-center transition-colors duration-300 rounded-sm text-white text-lg">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="#" class="w-12 h-12 border border-navy-700 bg-navy-800 hover:bg-gold-500 hover:text-navy-900 flex items-center justify-center transition-colors duration-300 rounded-sm text-white text-lg">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" class="w-12 h-12 border border-navy-700 bg-navy-800 hover:bg-gold-500 hover:text-navy-900 flex items-center justify-center transition-colors duration-300 rounded-sm text-white text-lg">
-                            <i class="fa-brands fa-linkedin-in"></i>
+                        <p class="text-sm text-gray-400 uppercase tracking-wider font-semibold mb-2">Campaign Number</p>
+                        <a href="tel:4376020715" class="text-xl font-medium text-white hover:text-gold-400 transition-colors">
+                            437-602-0715
                         </a>
                     </div>
                 </div>
